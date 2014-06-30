@@ -22,7 +22,7 @@ int main(int argc,char **argv)
      //cpp_pub.publish(msg1);
 	 cpp_pub.publish(msg2);
      //ROS_INFO("%s",msg1.data.c_str());
-	 ROS_INFO("%d",msg2.num);
+	 ROS_INFO("%d",(int)msg2.num);
 	 //ros::spinOnce();
      loop_rate.sleep();
 	 
