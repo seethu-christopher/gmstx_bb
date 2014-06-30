@@ -2,11 +2,11 @@
 #include "std_msgs/String.h"
 #include <gmstx_bb/Num1.h>
 
-//void cb(const gmstx_bb::Num1::ConstPtr& msg)
-void cb(const std_msgs::String::ConstPtr& msg)
+void cb(const gmstx_bb::Num1::ConstPtr& msg)
+//void cb(const std_msgs::String::ConstPtr& msg)
 {
-	ROS_INFO("Published str: [%s]",msg->data.c_str());
-	//ROS_INFO("Published msg: [%d]",msg->num);
+	//ROS_INFO("Published str: [%s]",msg->data.c_str());
+	ROS_INFO("Published msg: [%d]",(int)msg->num);
 }
 
 int main(int argc, char** argv)
